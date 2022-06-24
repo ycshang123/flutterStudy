@@ -18,7 +18,11 @@ class _FormPageState extends State<FormPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: _formBody(context));
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text("基础组件"),
+        ),
+        body: _formBody(context));
   }
 
   Center _buildBody(BuildContext context) {
