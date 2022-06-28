@@ -15,8 +15,8 @@ class _CategoryPageState extends State with SingleTickerProviderStateMixin {
   final tabs = ['无状态', '有状态', '单渲染', '多渲染', '可折叠', '可寄居', '未分类'];
   //中间的主页面
   final tabPages = [
-    const StatelessPage(),
-    const StatefulPage(),
+    const StatelessWidgetPage(),
+    const StatefulWidgetPage(),
     Container(),
     Container(),
     Container(),
