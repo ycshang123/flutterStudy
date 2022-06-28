@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../widget/hot_widget.dart';
+import '../widget/custom/hot_widget.dart';
 
 class SamplePage extends StatefulWidget {
   const SamplePage({Key? key}) : super(key: key);

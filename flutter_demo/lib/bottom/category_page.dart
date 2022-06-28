@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/page/stateful_page.dart';
-import 'package:flutter_demo/page/stateless_page.dart';
+import 'package:flutter_demo/page/stateful_widget_page.dart';
+import 'package:flutter_demo/page/stateless_widget_page.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({Key? key}) : super(key: key);

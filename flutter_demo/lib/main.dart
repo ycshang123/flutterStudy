@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
-import 'package:flutter_demo/page/container_widget.dart';
-import 'package:flutter_demo/page/image_widget.dart';
-import 'package:flutter_demo/page/plant_shop.dart';
-import 'package:flutter_demo/page/progress_widget.dart';
-import 'package:flutter_demo/page/text_widget.dart';
+import 'package:flutter_demo/sample/plant_shop.dart';
+import 'package:flutter_demo/widget/stateful/image_widget.dart';
+import 'package:flutter_demo/widget/stateless/container_widget.dart';
+import 'package:flutter_demo/widget/stateless/progress_widget.dart';
+import 'package:flutter_demo/widget/stateless/text_widget.dart';
 
 import 'bottom/index.dart';
 

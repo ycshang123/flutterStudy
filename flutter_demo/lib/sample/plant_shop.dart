@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/widget/recommend_widget.dart';
+import 'package:flutter_demo/widget/custom/recommend_widget.dart';
 
 class PlantShop extends StatelessWidget {
   const PlantShop({Key? key}) : super(key: key);
