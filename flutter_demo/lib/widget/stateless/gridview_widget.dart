@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/style.dart';
+
+import '../../common/data.dart';
 
 final data = List.generate(128, (i) => Color(0xFF61afef - 2 * i));
 
@@ -20,24 +23,20 @@ class GridViewWidget extends StatelessWidget {
             children: [
               const Text(
                 "GridViewWidget组件",
-                style: TextStyle(fontSize: 22, color: Colors.blueAccent),
+                style: titleStyle,
               ),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 5.0),
                 child: const Text(
                   "以网格的形式容纳多个组件,可以通过count、extent、custom、builder等构造，有内边距、是否反向、滑动控制等属性。",
-                  style: TextStyle(fontSize: 18),
+                  style: descStyle,
                 ),
               ),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: const Text(
                   "GridView.extent构造",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: subTitleStyle,
                 ),
               ),
               SizedBox(
@@ -55,11 +54,7 @@ class GridViewWidget extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: const Text(
                   "GridView.count构造",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: subTitleStyle,
                 ),
               ),
               SizedBox(
@@ -74,11 +69,7 @@ class GridViewWidget extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: const Text(
                   "GridView.builder构造",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: subTitleStyle,
                 ),
               ),
               SizedBox(
@@ -102,9 +93,6 @@ class GridViewWidget extends StatelessWidget {
     );
   }
 
-  String colorString(dynamic color) =>
-      "#${color.value.toRadixString(16).padLeft(8, "0").toUpperCase()}";
-
   Container _buildItem(dynamic color) => Container(
         alignment: Alignment.center,
         width: 100,
@@ -112,9 +100,7 @@ class GridViewWidget extends StatelessWidget {
         color: color,
         child: Text(
           colorString(color),
-          style: const TextStyle(color: Colors.white, shadows: [
-            Shadow(color: Colors.black, offset: Offset(.5, .5), blurRadius: 2)
-          ]),
+          style: shadowStyle,
         ),
       );
 }

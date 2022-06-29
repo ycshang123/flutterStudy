@@ -1,17 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/style.dart';
 
-var data = [
-  Colors.blue[50],
-  Colors.blue[100],
-  Colors.blue[200],
-  Colors.blue[300],
-  Colors.blue[400],
-  Colors.blue[500],
-  Colors.blue[600],
-  Colors.blue[700],
-  Colors.blue[800],
-  Colors.blue[900],
-];
+import '../../common/data.dart';
 
 class ListViewWidget extends StatelessWidget {
   const ListViewWidget({Key? key}) : super(key: key);
@@ -30,24 +20,20 @@ class ListViewWidget extends StatelessWidget {
             children: [
               const Text(
                 "列表组件",
-                style: TextStyle(fontSize: 22, color: Colors.blueAccent),
+                style: titleStyle,
               ),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 5.0),
                 child: const Text(
                   "列表显示的领军人物，容纳多个子组件，可以通过builder、separated、custom等构造。有内边距、是否反向、滑动控制器等属性。",
-                  style: TextStyle(fontSize: 18),
+                  style: descStyle,
                 ),
               ),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: const Text(
                   "ListView.separated构造器",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: titleStyle,
                 ),
               ),
               SizedBox(
@@ -67,11 +53,7 @@ class ListViewWidget extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: const Text(
                   "ListView基本使用",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: titleStyle,
                 ),
               ),
               SizedBox(
@@ -89,11 +71,7 @@ class ListViewWidget extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: const Text(
                   "ListView.builder构造",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: titleStyle,
                 ),
               ),
               SizedBox(
@@ -109,18 +87,13 @@ class ListViewWidget extends StatelessWidget {
     );
   }
 
-  String colorString(dynamic color) =>
-      "#${color.value.toRadixString(16).padLeft(8, "0").toUpperCase()}";
-
   Widget _buildItem(dynamic color) => Container(
         alignment: Alignment.center,
         height: 60,
         color: color,
         child: Text(
           colorString(color),
-          style: const TextStyle(color: Colors.white, shadows: [
-            Shadow(color: Colors.black, offset: Offset(.5, .5), blurRadius: 2)
-          ]),
+          style: shadowStyle,
         ),
       );
 }
