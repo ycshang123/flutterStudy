@@ -34,7 +34,7 @@ class CircleAvatarWidget extends StatelessWidget {
               margin: const EdgeInsets.symmetric(vertical: 5.0),
               child: const CircleAvatar(
                 //控制圆形大小
-                radius: 45,
+                radius: 30,
                 // backgroundColor: ,
                 backgroundImage: AssetImage('images/me.png'),
                 //设置图标的颜色

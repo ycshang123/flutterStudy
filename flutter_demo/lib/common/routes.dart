@@ -8,6 +8,8 @@ import '../widget/stateful/image_widget.dart';
 import '../widget/stateful/pageviewcontrol.dart';
 import '../widget/stateful/silverappbar_widget.dart';
 import '../widget/stateless/actionchip_widget.dart';
+import '../widget/stateless/button_widget.dart';
+import '../widget/stateless/card_widget.dart';
 import '../widget/stateless/chip_widget.dart';
 import '../widget/stateless/choicechip_widget.dart';
 import '../widget/stateless/circleavatar_widget.dart';
@@ -23,6 +25,7 @@ import '../widget/stateless/singlechildscrollview_widget.dart';
 import '../widget/stateless/text_widget.dart';
 import '../widget/stateless/theme_widget.dart';
 import '../widget/stateless/useraccountdrawerheader_widget.dart';
+import '../widget/stateless/visiblity_widget.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
@@ -46,6 +49,9 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/gesturedetector': (context) => const GestureDetectorWidget(),
   '/useraccountdrawerheader': (context) =>
       const UserAccountDrawerHeaderWidget(),
+  '/button': (context) => const ButtonWidget(),
+  '/card': (context) => const CardWidget(),
+  '/visiblity': (context) => const VisiblityWidget(),
   // 有状态组件导航
   '/image': (context) => const ImageWidget(),
   '/silverappbar': (context) => const SilverAppBarWidget(),
