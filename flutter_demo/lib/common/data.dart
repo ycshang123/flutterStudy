@@ -57,6 +57,30 @@ final statelessList = <ContainerInfo>[
   ContainerInfo('CardWidget', '卡片组件，基于Material组件实现，用于将单个组件卡片化。', '/card'),
   ContainerInfo(
       'VisiblityWidget', '显隐组件，控制一个组件显示或隐藏，可设置隐藏后的占位组件。', '/visiblity'),
+  ContainerInfo("ListTile",
+      "Flutter提供的一个通用列表条目结构，为左中右接口，相应位置可插入组件，可以很方便地应对特定的条目。", '/listtile'),
+  ContainerInfo(
+      'CheckboxListTile',
+      'Flutter提供的一个通用列表条目结构，为左中结构,尾部是一个CheckBox，相应位置可以插入组件，可以很方便地应对特定的条目。',
+      '/checkboxlisttile'),
+  ContainerInfo(
+      "SwitchListTileWidget",
+      "Flutter提供的一个通用列表条目结构,为左中结构，尾部是一个Switch,相应位置可插入组件，可以方便地应对特定的条目",
+      '/switchlisttile'),
+  ContainerInfo(
+      "RadioListTileWidget",
+      "Flutter提供的一个通用列表条目结构,为左中结构，尾部是一个Radio,相应位置可插入组件，可以方便地应对特定的条目。",
+      "/radiolisttile"),
+  ContainerInfo("GridTileWidget", " Flutter提供的一个通用列表条目结构可指定头、尾、子组件，常用于网格列表。",
+      "/gridtile"),
+  ContainerInfo("AboutListTileWidget",
+      " 一个点击条目,点击时可以弹出应用相关信息，可指定应用图标、应用名、应用版本号等信息和内部的子组件列表", "/aboutlisttile"),
+  ContainerInfo(
+      "SpacerWidget",
+      " 只能用于Row、Column和Flex布局中，可利用剩余空间进行占位ie,使用flex属性可以给多个Spacer按比例分配空间。",
+      "/spacer"),
+  ContainerInfo("AboutListTileWidget",
+      " 一个通用的对话框结构，可指定头、种、尾处的组件。拥有标题、内容的文字样式和边距、影深、形状等属性", "/alertdialog"),
 ];
 
 final statefulList = <ContainerInfo>[

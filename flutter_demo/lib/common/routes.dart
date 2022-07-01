@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/widget/stateless/aboutlisttile_widget.dart';
+import 'package:flutter_demo/widget/stateless/checkboxlisttile_widget.dart';
+import 'package:flutter_demo/widget/stateless/gridtile_widget.dart';
+import 'package:flutter_demo/widget/stateless/listtile_widget.dart';
+import 'package:flutter_demo/widget/stateless/radiolisttile_widget.dart';
+import 'package:flutter_demo/widget/stateless/switchlisttile_widget.dart';
 
 import '../bottom/index.dart';
 import '../bottom/sample_page.dart';
@@ -8,6 +14,7 @@ import '../widget/stateful/image_widget.dart';
 import '../widget/stateful/pageviewcontrol.dart';
 import '../widget/stateful/silverappbar_widget.dart';
 import '../widget/stateless/actionchip_widget.dart';
+import '../widget/stateless/alertdialog_widget.dart';
 import '../widget/stateless/button_widget.dart';
 import '../widget/stateless/card_widget.dart';
 import '../widget/stateless/chip_widget.dart';
@@ -22,6 +29,7 @@ import '../widget/stateless/listview_widget.dart';
 import '../widget/stateless/pageview_widget.dart';
 import '../widget/stateless/progress_widget.dart';
 import '../widget/stateless/singlechildscrollview_widget.dart';
+import '../widget/stateless/spacer_widget.dart';
 import '../widget/stateless/text_widget.dart';
 import '../widget/stateless/theme_widget.dart';
 import '../widget/stateless/useraccountdrawerheader_widget.dart';
@@ -52,6 +60,14 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/button': (context) => const ButtonWidget(),
   '/card': (context) => const CardWidget(),
   '/visiblity': (context) => const VisiblityWidget(),
+  '/listtile': (context) => const ListTileWidget(),
+  '/checkboxlisttile': (context) => const CheckboxListTileWidget(),
+  '/switchlisttile': (context) => const SwitchListTileWidget(),
+  '/radiolisttile': (context) => const RadioListTileWidget(),
+  '/gridtile': (context) => const GridTileWidget(),
+  '/aboutlisttile': (context) => const AboutListTileWidget(),
+  "/spacer": (context) => const SpacerWidget(),
+  "/alertdialog": (context) => const AlertDialogWidget(),
   // 有状态组件导航
   '/image': (context) => const ImageWidget(),
   '/silverappbar': (context) => const SilverAppBarWidget(),
