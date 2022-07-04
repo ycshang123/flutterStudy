@@ -37,7 +37,8 @@ import '../widget/stateless/visiblity_widget.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
-  '/sample-page': (context) => const SamplePage(),
+  '/'
+      '/sample-page': (context) => const SamplePage(),
   // 无状态组件导航
   '/container': (context) => const ContainerWidget(),
   '/text': (context) => const TextWidget(),

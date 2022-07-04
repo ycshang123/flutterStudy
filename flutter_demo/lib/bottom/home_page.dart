@@ -45,7 +45,14 @@ class Body extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset('images/banner.jpg'),
+          SizedBox(
+            width: 400,
+            height: 230,
+            child: Image.asset(
+              'images/banner.jpg',
+              fit: BoxFit.fill,
+            ),
+          ),
           //边距
           const SizedBox(
             height: 10,
@@ -70,7 +77,7 @@ class Body extends StatelessWidget {
       children: const <Widget>[
         SizedBox(
           width: 200,
-          height: 150,
+          height: 120,
           child: Card(
             color: Color(0xffe05b48),
             //阴影
@@ -97,21 +104,21 @@ class Body extends StatelessWidget {
     var list = [
       Info(
         width: 200.0,
-        height: 120.0,
+        height: 110.0,
         color: Colors.green,
         title: 'Container组件',
         url: '/container',
       ),
       Info(
         width: 200.0,
-        height: 120.0,
+        height: 110.0,
         color: Colors.pink,
         title: 'Image组件',
         url: '/image',
       ),
       Info(
         width: 200.0,
-        height: 120.0,
+        height: 110.0,
         color: Colors.orange,
         title: 'Text组件',
         url: '/text',
