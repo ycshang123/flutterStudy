@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class AboutDialogWidget extends StatelessWidget {
   const AboutDialogWidget({Key? key}) : super(key: key);

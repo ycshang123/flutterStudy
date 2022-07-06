@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/data.dart';
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class PageViewWidget extends StatelessWidget {
   const PageViewWidget({Key? key}) : super(key: key);

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class ButtonWidget extends StatelessWidget {
   const ButtonWidget({Key? key}) : super(key: key);

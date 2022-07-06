@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class GridTileWidget extends StatefulWidget {
   const GridTileWidget({Key? key}) : super(key: key);

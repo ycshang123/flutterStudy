@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../common/data.dart';
-import '../../common/style.dart';
+import 'package:flutter_demo/common/data.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class PageViewControl extends StatefulWidget {
   const PageViewControl({Key? key}) : super(key: key);

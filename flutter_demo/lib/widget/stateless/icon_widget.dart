@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../common/iconfont.dart';
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class IconWidget extends StatelessWidget {
   const IconWidget({Key? key}) : super(key: key);

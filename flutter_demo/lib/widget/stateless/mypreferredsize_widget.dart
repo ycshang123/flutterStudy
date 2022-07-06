@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class MyPreferredSizeWidget extends StatelessWidget {
   const MyPreferredSizeWidget({Key? key}) : super(key: key);

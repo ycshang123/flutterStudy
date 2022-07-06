@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class CupertinoWidget extends StatelessWidget {
   const CupertinoWidget({Key? key}) : super(key: key);

@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class ChoiceChipWidget extends StatefulWidget {
   const ChoiceChipWidget({Key? key}) : super(key: key);

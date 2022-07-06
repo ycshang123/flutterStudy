@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class AlertDialogWidget extends StatelessWidget {
   const AlertDialogWidget({Key? key}) : super(key: key);

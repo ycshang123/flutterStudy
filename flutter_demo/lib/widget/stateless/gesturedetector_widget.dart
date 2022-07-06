@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../common/style.dart';
+import 'package:flutter_demo/common/style.dart';
 
 class GestureDetectorWidget extends StatefulWidget {
   const GestureDetectorWidget({Key? key}) : super(key: key);
