@@ -8,13 +8,20 @@ import 'package:flutter_demo/widget/stateful/animatedcontainer_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedeffect_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedlist_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedswitcher_widget.dart';
+import 'package:flutter_demo/widget/stateful/checkboxradio_widget.dart';
 import 'package:flutter_demo/widget/stateful/future_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/hero_widget.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_app_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_widget.dart';
+import 'package:flutter_demo/widget/stateful/overlay_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageviewcontrol.dart';
+import 'package:flutter_demo/widget/stateful/range_slider_widget.dart';
+import 'package:flutter_demo/widget/stateful/refresh_indicator_widget.dart';
 import 'package:flutter_demo/widget/stateful/silverappbar_widget.dart';
+import 'package:flutter_demo/widget/stateful/slide_widget.dart';
+import 'package:flutter_demo/widget/stateful/snake_bar_widget.dart';
+import 'package:flutter_demo/widget/stateful/stepper_widget.dart';
 import 'package:flutter_demo/widget/stateful/transition_effect_widget.dart';
 import 'package:flutter_demo/widget/stateful/will_pop_scope_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutdialog_widget.dart';
@@ -116,6 +123,14 @@ Map<String, Widget Function(BuildContext)> routes = {
   "/willpop": (context) => const WillPopScopeWidget(),
   "/hero": (context) => const HeroWidget(),
   "/future": (context) => const FutureBuilderWidget(),
+  "/overlay": (context) => const OverlayWidget(),
+  "/stepper": (context) => const StepperWidget(),
+  "/checkbox": (context) => const CheckboxRadioWidget(),
+  "/slider": (context) => const SliderWidget(),
+  "/rangeslider": (context) => RangeSliderWidget(),
+  "/snackbar": (context) => SnackBarWidget(),
+  "/refreshIndicator": (context) => RefreshIndicatorWidget(),
+
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
