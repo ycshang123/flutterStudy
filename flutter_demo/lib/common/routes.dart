@@ -8,21 +8,33 @@ import 'package:flutter_demo/widget/stateful/animatedcontainer_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedeffect_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedlist_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedswitcher_widget.dart';
+import 'package:flutter_demo/widget/stateful/bottomsheet_widget.dart';
 import 'package:flutter_demo/widget/stateful/checkboxradio_widget.dart';
+import 'package:flutter_demo/widget/stateful/draggable_widget.dart';
+import 'package:flutter_demo/widget/stateful/expansion_widget.dart';
+import 'package:flutter_demo/widget/stateful/form_widget.dart';
 import 'package:flutter_demo/widget/stateful/future_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/hero_widget.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
+import 'package:flutter_demo/widget/stateful/ink_widget.dart';
+import 'package:flutter_demo/widget/stateful/listwheelscrollview_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_app_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_widget.dart';
 import 'package:flutter_demo/widget/stateful/overlay_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageviewcontrol.dart';
+import 'package:flutter_demo/widget/stateful/progressindicator_widget.dart';
 import 'package:flutter_demo/widget/stateful/range_slider_widget.dart';
+import 'package:flutter_demo/widget/stateful/recorderablelistview_widget.dart';
 import 'package:flutter_demo/widget/stateful/refresh_indicator_widget.dart';
+import 'package:flutter_demo/widget/stateful/scaffold_widget.dart';
+import 'package:flutter_demo/widget/stateful/selectabletext_widget.dart';
 import 'package:flutter_demo/widget/stateful/silverappbar_widget.dart';
 import 'package:flutter_demo/widget/stateful/slide_widget.dart';
 import 'package:flutter_demo/widget/stateful/snake_bar_widget.dart';
 import 'package:flutter_demo/widget/stateful/stepper_widget.dart';
+import 'package:flutter_demo/widget/stateful/textfield_widget.dart';
 import 'package:flutter_demo/widget/stateful/transition_effect_widget.dart';
+import 'package:flutter_demo/widget/stateful/valuelistenablebuilder_widget.dart';
 import 'package:flutter_demo/widget/stateful/will_pop_scope_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutdialog_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutlisttile_widget.dart';
@@ -130,6 +142,19 @@ Map<String, Widget Function(BuildContext)> routes = {
   "/rangeslider": (context) => RangeSliderWidget(),
   "/snackbar": (context) => SnackBarWidget(),
   "/refreshIndicator": (context) => RefreshIndicatorWidget(),
+
+  "/draggable": (context) => const DraggableWidget(),
+  "/bottom/sheet": (context) => const BottomSheetWidget(),
+  "/reorderable": (context) => const ReorderableListViewWidget(),
+  "/list/wheel/scroll": (context) => const ListWheelScrollViewWidget(),
+  "/form": (context) => const FormWidget(),
+  "/textfield": (context) => const TextFieldWidget(),
+  "/expansion": (context) => const ExpansionWidget(),
+  "/listenable": (context) => const ValueListenableBuilderWidget(),
+  "/scaffold": (context) => const ScaffoldWidget(),
+  "/ink": (context) => const InkWidget(),
+  "/progress/indicator": (context) => const ProgressIndicatorWidget(),
+  "/selectable": (context) => const SelectableTextWidget(),
 
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
