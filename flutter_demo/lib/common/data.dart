@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/widget/custom/widget_container.dart';
+import 'package:flutter_demo/widget/custom/widget_decorated_box.dart';
 
 final data = <dynamic>[
   Colors.blue[50],
@@ -16,7 +17,7 @@ final data = <dynamic>[
 
 String colorString(dynamic color) =>
     "#${color.value.toRadixString(16).padLeft(8, '0').toUpperCase()}";
-
+//无状态组件列表
 final statelessList = <ContainerInfo>[
   ContainerInfo('Container', '用于容纳单个子组件的容器组件。集成了若干个单子组件的功能，如内外边距、形变、装饰、约束等。',
       '/container'),
@@ -106,7 +107,7 @@ final statelessList = <ContainerInfo>[
       "MyPreferredSize", "优先尺寸组件，可容纳一个子组件，设置优先尺寸，不会对其子组件施加任何约束", "/perferred"),
   ContainerInfo("Cupertino", "iOS风格通用对话框,可指定头、中、尾部的组件。", "/cupertino"),
 ];
-
+//有状态组件列表
 final statefulList = <ContainerInfo>[
   ContainerInfo(
       'Image', '用于显示一张图片，可以从文件、内存、网络、资源里加载，可以指定适应方式、样式、颜色混合模式、重复模式。', '/image'),
@@ -176,4 +177,11 @@ final statefulList = <ContainerInfo>[
   ContainerInfo('ProgressIndicator', '圆形进度组件、直线型进度组件', '/progress/indicator'),
   ContainerInfo(
       'SelectableText', '可选择的文字，可以选择、复制。可指定浮标的颜色、大小、文字样式、对齐方式等', '/selectable'),
+];
+
+final singleRenderList = <ContainerMsg>[
+  ContainerMsg('Clip', '椭圆裁剪，可容纳一个子组件，并将其以宽高为⻓轴和短轴进行椭圆裁切', '/clip'),
+  ContainerMsg(
+      'Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒。', '/box'),
+  ContainerMsg('AlignPadding', '对⻬组件和边距组件', '/align'),
 ];

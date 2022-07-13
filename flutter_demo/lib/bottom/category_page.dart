@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/page/live_away_widget_page.dart';
+import 'package:flutter_demo/page/multi_render_widget_page.dart';
+import 'package:flutter_demo/page/other_widget_page.dart';
+import 'package:flutter_demo/page/single_render_widget_page.dart';
+import 'package:flutter_demo/page/sliver_widget_page.dart';
 import 'package:flutter_demo/page/stateful_widget_page.dart';
 import 'package:flutter_demo/page/stateless_widget_page.dart';
 
@@ -13,16 +18,18 @@ class CategoryPage extends StatefulWidget {
 class _CategoryPageState extends State with SingleTickerProviderStateMixin {
   //顶部的循环数据
   final tabs = ['无状态', '有状态', '单渲染', '多渲染', '可折叠', '可寄居', '未分类'];
+
   //中间的主页面
   final tabPages = [
     const StatelessWidgetPage(),
     const StatefulWidgetPage(),
-    Container(),
-    Container(),
-    Container(),
-    Container(),
-    Container()
+    const SingleRenderWidgetPage(),
+    const MultiRenderWidgetPage(),
+    const SliverWidgetPage(),
+    const LiveAwayWidgetPage(),
+    const OtherWidgetPage()
   ];
+
   //为了使所选的 tab 与它所对应的内容能够同步变化
   late TabController _tabController;
 
