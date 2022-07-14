@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_demo/common/data.dart';
-import 'package:flutter_demo/widget/custom/widget_decorated_box.dart';
+import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 
 class SingleRenderWidgetPage extends StatelessWidget {
   const SingleRenderWidgetPage({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class SingleRenderWidgetPage extends StatelessWidget {
       //  使用ListView来build一个列表
       child: ListView.builder(
         itemBuilder: (BuildContext context, int index) {
-          return DecoratedContainer(singleRenderList[index]);
+          return CustomListItem(singleRenderList[index]);
         },
         itemCount: singleRenderList.length,
       ),

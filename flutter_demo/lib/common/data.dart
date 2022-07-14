@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 import 'package:flutter_demo/widget/custom/widget_container.dart';
-import 'package:flutter_demo/widget/custom/widget_decorated_box.dart';
 
 final data = <dynamic>[
   Colors.blue[50],
@@ -179,9 +179,15 @@ final statefulList = <ContainerInfo>[
       'SelectableText', '可选择的文字，可以选择、复制。可指定浮标的颜色、大小、文字样式、对齐方式等', '/selectable'),
 ];
 
-final singleRenderList = <ContainerMsg>[
-  ContainerMsg('Clip', '椭圆裁剪，可容纳一个子组件，并将其以宽高为⻓轴和短轴进行椭圆裁切', '/clip'),
-  ContainerMsg(
-      'Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒。', '/box'),
-  ContainerMsg('AlignPadding', '对⻬组件和边距组件', '/align'),
+final singleRenderList = <ItemInfo>[
+  ItemInfo('Clip', '椭圆裁剪，可容纳一个子组件，并将其以宽高为⻓轴和短轴进行椭圆裁切', '/clip',
+      Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+  ItemInfo('Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒。', '/box',
+      Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+  ItemInfo('AlignPadding', '对⻬组件和边距组件', '/align', Color(0xffe3f2fd),
+      Color(0xff64b5f6), 3.0),
+  ItemInfo('CustomPaint', '⾃定义绘制，可实现⼀些复杂的⾃定义绘制组件，是Flutter中⾃定义组件的灵魂组件。',
+      '/custompaint', Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+  ItemInfo('ColorFiltered', '滤⾊器，可容纳⼀个⼦组件，并将组件按照29种叠⾊模式和任意组件混合，⾮常强⼤。',
+      '/colorfiltered', Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
 ];

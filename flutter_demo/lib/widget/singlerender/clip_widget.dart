@@ -2,6 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/style.dart';
+import 'package:flutter_demo/widget/singlerender/custom_shape_border.dart';
+
+import 'hole_shape_border.dart';
 
 class ClipWidget extends StatelessWidget {
   const ClipWidget({Key? key}) : super(key: key);
@@ -116,6 +119,32 @@ class ClipWidget extends StatelessWidget {
                   width: 150,
                   height: 100,
                   fit: BoxFit.cover,
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Material(
+                color: Colors.green.shade100,
+                shape: HoleShapeBorder(),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 120,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Material(
+                color: Colors.green.shade100,
+                shape: CustomShapeBorder(color: Colors.green.shade600),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 120,
+                  ),
                 ),
               )
             ],
