@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/sample/juejin_list_item.dart';
 import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 import 'package:flutter_demo/widget/custom/widget_container.dart';
 
@@ -190,4 +191,115 @@ final singleRenderList = <ItemInfo>[
       '/custompaint', Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
   ItemInfo('ColorFiltered', '滤⾊器，可容纳⼀个⼦组件，并将组件按照29种叠⾊模式和任意组件混合，⾮常强⼤。',
       '/colorfiltered', Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+  ItemInfo('LayoutBuilder', '可以监测到⽗容器的区域⼤⼩，并根据⽗容器的尺⼨信息完成定义布局，是⼀个⾮常实⽤的组件。',
+      '/layout', Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+  ItemInfo('OffStage', '滤可容纳⼀个⼦组件，可更改其消失与否。offstage属性为true表示隐藏。', '/offstage',
+      Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+  ItemInfo('Opacity', '可容纳⼀个⼦组件，将其透明度变为opacity值，取值在0-1之间。', '/opacity',
+      Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+];
+
+// 多渲染组件列表
+final multiRenderList = <ItemInfo>[
+  ItemInfo(
+      'Flex',
+      '弹性布局，Row和Column的父类，最强大的布局方式，可容纳多个组件，可与Spacer、Expanded、Flexible组件联用进行灵活布局。',
+      'flex',
+      Color(0xffe3f2fd),
+      Color(0xff64b5f6),
+      3.0),
+  ItemInfo(
+      'Stack',
+      '堆叠布局，可容纳多个组件，以堆叠的方式摆放组件，后者居上。拥有alignment属性，可与Positioned组件联用，精确定位。',
+      'stack',
+      Color(0xffe3f2fd),
+      Color(0xff64b5f6),
+      3.0),
+  ItemInfo(
+      'IndexedStack',
+      '索引堆叠，Stack组件的子类，可以堆叠多个组件，并通过index来指定展示的组件的索引，其余的会被隐藏。',
+      'indexed_stack',
+      Color(0xffe3f2fd),
+      Color(0xff64b5f6),
+      3.0),
+  ItemInfo(
+      'Wrap',
+      '包裹布局，可容纳多个组件，按照指定的方向依次排布，可以很方便地处理孩子之间的间距，当越界时可以自动换行，拥有主轴和交叉轴的对其方式，比较灵活。',
+      'wrap',
+      Color(0xffe3f2fd),
+      Color(0xff64b5f6),
+      3.0),
+  ItemInfo('Flow', '流动布局，可容纳多个组件，需要自己指定排布的代理，可以高强度自定义组件打牌不，实现普通布局无法达到的效果，布局之王。',
+      'flow', Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+  ItemInfo('RichText', '富文本，可以容纳多种文字样式或各种组件的富文本组件，应用较为广泛。', 'rich_text',
+      Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
+];
+
+final List<SpecialColumnItem> listData = [
+  SpecialColumnItem(
+    title: "Flutter 基础",
+    url: "images/draw_bg3.webp",
+    articleCount: 97,
+    attentionCount: 188,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 周边",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 绘制集录",
+    url: "images/base_draw.webp",
+    articleCount: 29,
+    attentionCount: 118,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 动画集录",
+    url: "images/anim_draw.webp",
+    articleCount: 34,
+    attentionCount: 18,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 玩转正则",
+    url: "images/draw_bg3.webp",
+    articleCount: 7,
+    attentionCount: 88,
+  ),
+  SpecialColumnItem(
+    title: "Rust 学习指南",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 228,
+  ),
+  SpecialColumnItem(
+    title: "Vue 学习指南",
+    url: "images/base_draw.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "前端绘制宝典",
+    url: "images/anim_draw.webp",
+    articleCount: 19,
+    attentionCount: 1228,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 基础",
+    url: "images/draw_bg3.webp",
+    articleCount: 97,
+    attentionCount: 188,
+  ),
+  SpecialColumnItem(
+    title: "FlutterUnit 周边",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 绘制集录",
+    url: "images/base_draw.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
 ];

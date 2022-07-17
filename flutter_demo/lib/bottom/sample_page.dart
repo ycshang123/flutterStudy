@@ -23,9 +23,7 @@ class _SamplePageState extends State<SamplePage> {
       height: height,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: NetworkImage(
-            'https://niit-soft.oss-cn-hangzhou.aliyuncs.com/banner/bg.jpg',
-          ),
+          image: AssetImage("images/bg.jpg"),
           fit: BoxFit.cover,
         ),
       ),
@@ -53,6 +51,34 @@ class _SamplePageState extends State<SamplePage> {
         title: 'Demo Page',
         url: '/demo',
       ),
+      Info(
+        width: 400.0,
+        height: 100.0,
+        color: Colors.deepPurpleAccent.shade100,
+        title: '掘金列表',
+        url: '/juejin',
+      ),
+      Info(
+        width: 400.0,
+        height: 100.0,
+        color: Colors.orangeAccent.shade200,
+        title: '聊天列表',
+        url: '/chat',
+      ),
+      Info(
+        width: 400.0,
+        height: 100.0,
+        color: Colors.greenAccent.shade100,
+        title: '图片上传',
+        url: '/upload',
+      ),
+      // Info(
+      //   width: 400.0,
+      //   height: 100.0,
+      //   color: Colors.pinkAccent.shade100,
+      //   title: '图片上传',
+      //   url: '/demo',
+      // ),
       Info(
         width: 400.0,
         height: 100.0,

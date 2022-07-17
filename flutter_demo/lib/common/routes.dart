@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
+import 'package:flutter_demo/multi/flex_widget.dart';
+import 'package:flutter_demo/multi/flow_widget.dart';
+import 'package:flutter_demo/multi/indexed_stack_widget.dart';
+import 'package:flutter_demo/multi/rich_text_widget.dart';
+import 'package:flutter_demo/multi/stack_widget.dart';
+import 'package:flutter_demo/multi/wrap_widget.dart';
+import 'package:flutter_demo/sample/chat_list.dart';
 import 'package:flutter_demo/sample/demo_page.dart';
+import 'package:flutter_demo/sample/juejin_list_item.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
+import 'package:flutter_demo/sample/upload_page.dart';
 import 'package:flutter_demo/widget/singlerender/alignpadding_widget.dart';
 import 'package:flutter_demo/widget/singlerender/box_widget.dart';
 import 'package:flutter_demo/widget/singlerender/clip_widget.dart';
 import 'package:flutter_demo/widget/singlerender/colorfiltered_widget.dart';
 import 'package:flutter_demo/widget/singlerender/custompaint_widget.dart';
+import 'package:flutter_demo/widget/singlerender/layoutbuilder_widget.dart';
+import 'package:flutter_demo/widget/singlerender/offstage_widget.dart';
+import 'package:flutter_demo/widget/singlerender/opacity_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedbuilder_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedcontainer_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedeffect_widget.dart';
@@ -167,9 +179,22 @@ Map<String, Widget Function(BuildContext)> routes = {
   "/clip": (context) => const ClipWidget(),
   "/custompaint": (context) => const CustomPaintWidget(),
   "/colorfiltered": (context) => const ColorFilteredWidget(),
-
+  "/layout": (context) => const LayoutBuilderWidget(),
+  "/offstage": (context) => const OffstageWidget(),
+  "/opacity": (context) => const OpacityWidget(),
+  //多渲染
+  ///多渲染组件
+  'flex': (context) => FlexWidget(),
+  'stack': (context) => const StackWidget(),
+  'indexed_stack': (context) => const IndexedStackWidget(),
+  'wrap': (context) => WrapWidget(),
+  'flow': (context) => const FlowWidget(),
+  'rich_text': (context) => const RichTextWidget(),
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
   "/demo": (context) => const DemoPage(),
+  "/juejin": (context) => const JuejinListItem(),
+  "/chat": (context) => const ChatList(),
+  "/upload": (context) => const UploadPage()
 };

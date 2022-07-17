@@ -124,13 +124,21 @@ class ClipWidget extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              Material(
-                color: Colors.green.shade100,
-                shape: HoleShapeBorder(),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+              Container(
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                    border: Border.all(width: 2.0, color: Colors.indigo),
+                    borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+                    image: const DecorationImage(
+                        image: AssetImage("images/bg.jpg"), fit: BoxFit.fill)),
+                child: Material(
+                  color: Colors.orangeAccent,
+                  shape: const HoleShapeBorder(
+                    size: 20,
+                    offset: Offset(0.05, 0.1),
+                  ),
                   child: Container(
-                    height: 120,
+                    height: 200,
                   ),
                 ),
               ),
