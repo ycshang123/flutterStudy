@@ -308,6 +308,57 @@ final sliverList = <ItemInfo>[
       3.0),
 ];
 
+// 可寄居组件列表
+final liveAwayList = <ItemInfo>[
+  ItemInfo(
+    'Flexible',
+    '只能用于Flex、Row、Column中，可嵌套孩子组件，利用剩余空间对占位空间进行延展，也可指定fit类型。',
+    'flexible',
+    const Color(0xfffff8e1),
+    const Color(0xffffe082),
+    3,
+  ),
+  ItemInfo(
+    'Expanded',
+    '父类是Flexible，相当于一个fit类型为tight的Flexible组件。可嵌套孩子组件，利用剩余空间对占位空间进行延展。',
+    'expanded',
+    const Color(0xfffff8e1),
+    const Color(0xffffe082),
+    3,
+  ),
+  ItemInfo(
+    'MediaQuery',
+    '媒体查询组件，可通过MediaQuery.of来获取屏幕尺寸、设备密度、文字缩放比例、边距等信息。',
+    'media_query',
+    const Color(0xfffff8e1),
+    const Color(0xffffe082),
+    3,
+  ),
+  ItemInfo(
+    'Positioned',
+    '定位组件，只能用在Stack中，可以指定上下左右距离，对某个组件进行位置的精确摆放。',
+    'positioned',
+    const Color(0xfffff8e1),
+    const Color(0xffffe082),
+    3,
+  ),
+  ItemInfo(
+    'DefaultTextStyle',
+    '可容纳一个子组件，为后代的文字指定默认样式。常用于多个相同文字的样式统一、避免一一设置。',
+    'default_text_style',
+    const Color(0xfffff8e1),
+    const Color(0xffffe082),
+    3,
+  ),
+  ItemInfo(
+    'AllTheme',
+    '各种Theme组件，包括IconTheme、ButtonTheme、ChipTheme、DividerTheme、SliderTheme、PopupMenuTheme、ListTileTheme等。',
+    'all_theme',
+    const Color(0xfffff8e1),
+    const Color(0xffffe082),
+    3,
+  ),
+];
 final List<SpecialColumnItem> listData = [
   SpecialColumnItem(
     title: "Flutter 基础",

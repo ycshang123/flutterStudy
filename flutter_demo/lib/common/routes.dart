@@ -13,6 +13,12 @@ import 'package:flutter_demo/sample/juejin_list_item.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
 import 'package:flutter_demo/sample/upload_page.dart';
+import 'package:flutter_demo/widget/liveaway/all_theme_widget.dart';
+import 'package:flutter_demo/widget/liveaway/default_text_style_widget.dart';
+import 'package:flutter_demo/widget/liveaway/expanded_widget.dart';
+import 'package:flutter_demo/widget/liveaway/flexible_widget.dart';
+import 'package:flutter_demo/widget/liveaway/media_query_widget.dart';
+import 'package:flutter_demo/widget/liveaway/positioned_widget.dart';
 import 'package:flutter_demo/widget/singlerender/alignpadding_widget.dart';
 import 'package:flutter_demo/widget/singlerender/box_widget.dart';
 import 'package:flutter_demo/widget/singlerender/clip_widget.dart';
@@ -223,4 +229,12 @@ Map<String, Widget Function(BuildContext)> routes = {
   'sliver_padding': (context) => SliverPaddingWidget(),
   'sliver_animated_list': (context) => const SliverAnimatedListWidget(),
   'nested_scroll_view': (context) => NestedScrollViewWidget(),
+
+  ///可寄居组件
+  'expanded': (context) => const ExpandedWidget(),
+  'flexible': (context) => const FlexibleWidget(),
+  'media_query': (context) => const MediaQueryWidget(),
+  'positioned': (context) => PositionedWidget(),
+  'default_text_style': (context) => const DefaultTextStyleWidget(),
+  'all_theme': (context) => const AllThemeWidget(),
 };
