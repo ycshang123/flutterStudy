@@ -235,6 +235,79 @@ final multiRenderList = <ItemInfo>[
       Color(0xffe3f2fd), Color(0xff64b5f6), 3.0),
 ];
 
+// 可折叠组件列表
+final sliverList = <ItemInfo>[
+  ItemInfo(
+      'CustomScrollView',
+      '通用滑动视图组件，可指定滑动方向、是否反向、滑动控制器等属性，其子组件必须是Sliver家族成员。',
+      'custom_scroll_view',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo(
+      'SliverList',
+      'Sliver家族的列表组件，通过指定delegate构造子组件，通常用于CustomScrollView中。',
+      'sliver_list',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo(
+      'SliverPersistentHeader',
+      '通常用于CustomScrollView中，可以让一个组件在滑动中停留在顶部，不会在滑动中消失。',
+      'sliver_persistent_header',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo('SliverAppBar', 'Sliver家族的顶部栏通用结构，可以指定左中右组件、收缩空间、影深、固定模式、背景色等属性。',
+      'sliver_app_bar', Color(0xffe8f5e9), Color(0xffa5d6a7), 3.0),
+  ItemInfo(
+      'SliverGrid',
+      'Sliver网格，Sliver家族的网格列表组件，和GridView类似，通过count和extent构造，通常用于CustomScrollView中。',
+      'sliver_grid',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo('SliverToBoxAdapter', 'Sliver适配器，可以容纳一个普通的组件，并将其转化为Sliver家族组件的适配器。',
+      'sliver_to_box_adapter', Color(0xffe8f5e9), Color(0xffa5d6a7), 3.0),
+  ItemInfo(
+      'SliverLayoutBuilder',
+      'Sliver布局构造器，Sliver家族的一员，在滑动过程中可以通过回调出的SliverConstraints对象进行子组件的构造。',
+      'sliver_layout_builder',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo(
+      'SliverFillRemaining',
+      'Sliver填补剩余，一个包含单个box子元素的sliver,填充了视窗中的剩余空间。可指定两个bool值控制滑动效果。',
+      'sliver_fill_remaining',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo(
+      'SliverFixedExtentList',
+      'Sliver家族的列表组件，通过delegate构造子组件，可以指定item的高度，通常用于CustomScrollView中。',
+      'sliver_fixed_extent_list',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo(
+      'SliverPadding',
+      'Sliver内间距，可容纳一个Sliver家族的子组件，添加自身内边距来限制子组件的占位，核心属性为padding。',
+      'sliver_padding',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+  ItemInfo('SliverAnimatedList', 'Sliver动画列表，在插入或删除项目时有动画效果的Sliver组件。',
+      'sliver_animated_list', Color(0xffe8f5e9), Color(0xffa5d6a7), 3.0),
+  ItemInfo(
+      'NestedScrollView',
+      '嵌套滑动视图，用于多个视图滑动嵌套处理，可以指定头部、滑动控制器、滑动方向等，其中body必须是可滑动类型的组件。',
+      'nested_scroll_view',
+      Color(0xffe8f5e9),
+      Color(0xffa5d6a7),
+      3.0),
+];
+
 final List<SpecialColumnItem> listData = [
   SpecialColumnItem(
     title: "Flutter 基础",

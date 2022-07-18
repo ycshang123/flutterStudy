@@ -21,6 +21,18 @@ import 'package:flutter_demo/widget/singlerender/custompaint_widget.dart';
 import 'package:flutter_demo/widget/singlerender/layoutbuilder_widget.dart';
 import 'package:flutter_demo/widget/singlerender/offstage_widget.dart';
 import 'package:flutter_demo/widget/singlerender/opacity_widget.dart';
+import 'package:flutter_demo/widget/sliver/custom_scroll_view_widget.dart';
+import 'package:flutter_demo/widget/sliver/nested_scroll_view_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_animated_list_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_app_bar_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_fill_remaining_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_fixed_extent_list_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_grid_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_layout_builder_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_list_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_padding_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_persistent_header_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_to_box_adapter_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedbuilder_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedcontainer_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedeffect_widget.dart';
@@ -196,5 +208,19 @@ Map<String, Widget Function(BuildContext)> routes = {
   "/demo": (context) => const DemoPage(),
   "/juejin": (context) => const JuejinListItem(),
   "/chat": (context) => const ChatList(),
-  "/upload": (context) => const UploadPage()
+  "/upload": (context) => const UploadPage(),
+
+  ///可折叠组件
+  'custom_scroll_view': (context) => const CustomScrollViewWidget(),
+  'sliver_list': (context) => const SliverListWidget(),
+  'sliver_persistent_header': (context) => const SliverPersistentHeaderWidget(),
+  'sliver_app_bar': (context) => const SliverAppBarWidget(),
+  'sliver_grid': (context) => const SliverGridWidget(),
+  'sliver_to_box_adapter': (context) => const SliverToBoxAdapterWidget(),
+  'sliver_layout_builder': (context) => const SliverLayoutBuilderWidget(),
+  'sliver_fill_remaining': (context) => const SliverFillRemainingWidget(),
+  'sliver_fixed_extent_list': (context) => const SliverFixedExtentListWidget(),
+  'sliver_padding': (context) => SliverPaddingWidget(),
+  'sliver_animated_list': (context) => const SliverAnimatedListWidget(),
+  'nested_scroll_view': (context) => NestedScrollViewWidget(),
 };
